@@ -1,0 +1,198 @@
+backend:
+  name: github
+  repo: Aspirefyx/aspirefyx
+  branch: main
+
+media_folder: images
+public_folder: /images
+
+collections:
+
+  # ── SITE SETTINGS ──
+  - name: settings
+    label: Site Settings
+    files:
+      - name: site
+        label: General Settings
+        file: content/data.json
+        fields:
+          - label: Site Name
+            name: site
+            widget: object
+            fields:
+              - { label: Site Name, name: name, widget: string }
+              - { label: Tagline, name: tagline, widget: string }
+              - { label: Logo, name: logo, widget: image }
+              - { label: Email, name: email, widget: string }
+              - { label: Location, name: location, widget: string }
+              - { label: Booking URL, name: booking_url, widget: string }
+
+  # ── HOME PAGE ──
+  - name: home
+    label: Home Page
+    files:
+      - name: home
+        label: Home Page Content
+        file: content/data.json
+        fields:
+          - label: Home Page
+            name: home
+            widget: object
+            fields:
+              - { label: Eyebrow Text, name: hero_eyebrow, widget: string }
+              - { label: Hero Headline, name: hero_headline, widget: string }
+              - { label: Hero Italic Line, name: hero_italic, widget: string }
+              - { label: Hero Body Text, name: hero_body, widget: text }
+              - { label: Primary Button Text, name: hero_cta_primary, widget: string }
+              - { label: Secondary Button Text, name: hero_cta_secondary, widget: string }
+              - { label: Assessment Tagline, name: assessment_tagline, widget: string }
+              - { label: Who We Serve Heading, name: wws_heading, widget: string }
+              - { label: Who We Serve Subheading, name: wws_subheading, widget: string }
+
+  # ── PATHFINDERS PAGE ──
+  - name: pathfinders
+    label: Pathfinders Page
+    files:
+      - name: pathfinders
+        label: Pathfinders Content
+        file: content/data.json
+        fields:
+          - label: Pathfinders Page
+            name: pathfinders
+            widget: object
+            fields:
+              - { label: Page Tag, name: tag, widget: string }
+              - { label: Hero Headline, name: hero_headline, widget: string }
+              - { label: Hero Lead Text, name: hero_lead, widget: text }
+              - { label: Risk Label, name: risk_label, widget: string }
+              - { label: Risk Description, name: risk_text, widget: text }
+              - { label: Risk Quote, name: risk_quote, widget: string }
+              - { label: Who They Are — Heading, name: who_heading, widget: string }
+              - { label: Who They Are — Subheading, name: who_subheading, widget: string }
+              - { label: Who They Are — Left Column, name: who_col1, widget: text }
+              - { label: Who They Are — Right Column, name: who_col2, widget: text }
+              - { label: CTA Label, name: cta_label, widget: string }
+              - { label: CTA Headline, name: cta_headline, widget: string }
+              - { label: CTA Body, name: cta_body, widget: text }
+
+  # ── PROFESSIONALS PAGE ──
+  - name: professionals
+    label: Professionals Page
+    files:
+      - name: professionals
+        label: Professionals Content
+        file: content/data.json
+        fields:
+          - label: Professionals Page
+            name: professionals
+            widget: object
+            fields:
+              - { label: Page Tag, name: tag, widget: string }
+              - { label: Hero Headline, name: hero_headline, widget: string }
+              - { label: Hero Lead Text, name: hero_lead, widget: text }
+              - { label: Risk Label, name: risk_label, widget: string }
+              - { label: Risk Description, name: risk_text, widget: text }
+              - { label: Risk Quote, name: risk_quote, widget: string }
+              - { label: Who They Are — Heading, name: who_heading, widget: string }
+              - { label: Who They Are — Subheading, name: who_subheading, widget: string }
+              - { label: Who They Are — Left Column, name: who_col1, widget: text }
+              - { label: Who They Are — Right Column, name: who_col2, widget: text }
+              - { label: CTA Label, name: cta_label, widget: string }
+              - { label: CTA Headline, name: cta_headline, widget: string }
+              - { label: CTA Body, name: cta_body, widget: text }
+
+  # ── BUILDERS PAGE ──
+  - name: builders
+    label: Builders Page
+    files:
+      - name: builders
+        label: Builders Content
+        file: content/data.json
+        fields:
+          - label: Builders Page
+            name: builders
+            widget: object
+            fields:
+              - { label: Page Tag, name: tag, widget: string }
+              - { label: Hero Headline, name: hero_headline, widget: string }
+              - { label: Hero Lead Text, name: hero_lead, widget: text }
+              - { label: Risk Label, name: risk_label, widget: string }
+              - { label: Risk Description, name: risk_text, widget: text }
+              - { label: Risk Quote, name: risk_quote, widget: string }
+              - { label: Who They Are — Heading, name: who_heading, widget: string }
+              - { label: Who They Are — Subheading, name: who_subheading, widget: string }
+              - { label: Who They Are — Left Column, name: who_col1, widget: text }
+              - { label: Who They Are — Right Column, name: who_col2, widget: text }
+              - { label: CTA Label, name: cta_label, widget: string }
+              - { label: CTA Headline, name: cta_headline, widget: string }
+              - { label: CTA Body, name: cta_body, widget: text }
+
+  # ── BOOK PAGE ──
+  - name: book
+    label: Book a Session Page
+    files:
+      - name: book
+        label: Book Page Content
+        file: content/data.json
+        fields:
+          - label: Book Page
+            name: book
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Headline, name: headline, widget: string }
+              - { label: Description, name: subline, widget: text }
+              - { label: Point 1, name: point1, widget: string }
+              - { label: Point 2, name: point2, widget: string }
+              - { label: Point 3, name: point3, widget: string }
+
+  # ── ABOUT PAGE ──
+  - name: about
+    label: About Page
+    files:
+      - name: about
+        label: About Content
+        file: content/data.json
+        fields:
+          - label: About Page
+            name: about
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Headline, name: headline, widget: string }
+              - { label: Founding Text, name: founding_text, widget: text }
+              - { label: Founder Name, name: founder_name, widget: string }
+              - { label: Founder Title, name: founder_title, widget: string }
+              - { label: Founder Bio, name: founder_bio, widget: text }
+              - { label: Philosophy Heading, name: philosophy_heading, widget: string }
+              - { label: Philosophy Text, name: philosophy_text, widget: text }
+
+  # ── FOOTER ──
+  - name: footer
+    label: Footer
+    files:
+      - name: footer
+        label: Footer Content
+        file: content/data.json
+        fields:
+          - label: Footer
+            name: footer
+            widget: object
+            fields:
+              - { label: Tagline, name: tagline, widget: string }
+              - { label: Location, name: location, widget: string }
+              - { label: Email, name: email, widget: string }
+
+  # ── BLOG POSTS ──
+  - name: blog
+    label: Blog Posts
+    folder: content/blog
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Publish Date, name: date, widget: datetime }
+      - { label: Status, name: draft, widget: boolean, default: true, hint: "Toggle off to publish" }
+      - { label: Cover Image, name: image, widget: image, required: false }
+      - { label: Excerpt, name: excerpt, widget: text, hint: "Short summary shown in blog list" }
+      - { label: Body, name: body, widget: markdown }
