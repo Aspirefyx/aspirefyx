@@ -1,0 +1,96 @@
+{
+  "site": {
+    "name": "AspireFyX",
+    "tagline": "Diagnostic Growth Architecture Firm",
+    "logo": "/images/logo.png",
+    "email": "hello@aspirefyx.com",
+    "location": "Singapore | India",
+    "booking_url": "https://calendly.com/aspirefyx"
+  },
+
+  "home": {
+    "hero_eyebrow": "Diagnostic Growth Architecture Firm",
+    "hero_headline": "Find Your Edge Before You Chase Growth.",
+    "hero_italic": "We do not optimise activity. We correct architecture.",
+    "hero_body": "AspireFyX installs structured diagnostic clarity before irreversible education, career, and business decisions are made. Growth is not a volume problem. It is a structural alignment problem.",
+    "hero_cta_primary": "Find Your Starting Point →",
+    "hero_cta_secondary": "Our Philosophy",
+    "assessment_tagline": "Takes 3–4 minutes · No sign-up required",
+    "wws_heading": "Who We Serve",
+    "wws_subheading": "Three distinct profiles. One diagnostic architecture."
+  },
+
+  "pathfinders": {
+    "tag": "01 · Pathfinders",
+    "hero_headline": "Structured direction before irreversible commitment.",
+    "hero_lead": "Students and early-career individuals making decisions that shape identity, earning trajectory, and life geography. The risk is not lack of ambition — it is direction chosen without diagnostic architecture.",
+    "risk_label": "The Structural Risk",
+    "risk_text": "Premature commitment without structured diagnostic clarity. Educational and career decisions made under social influence and prestige bias rather than cognitive and values alignment. The consequence is not just wasted years — it is compounding misalignment across earning, identity, and trajectory.",
+    "risk_quote": "The risk is premature commitment without structured diagnostic clarity.",
+    "who_heading": "Who Pathfinders Are",
+    "who_subheading": "The decisions Pathfinders face are some of the most consequential — and least supported — in an entire career arc.",
+    "who_col1": "Education and early career decisions carry structural consequences that compound over decades. The institution chosen, the field entered, the first employer — each shapes earning trajectory, network formation, professional identity, and geographic mobility. Most Pathfinders make these decisions under significant social pressure and incomplete self-knowledge.",
+    "who_col2": "AspireFyX installs diagnostic architecture before commitment — mapping cognitive strengths, work values, and interest architecture against verified occupational data to produce a direction that is evidence-based, not assumed. The result is not a list of career options. It is a structured growth system built from the inside out.",
+    "cta_label": "Ready to establish direction?",
+    "cta_headline": "Begin with a 45-minute Discovery Session.",
+    "cta_body": "No pitch. No obligation. A structured conversation to identify your diagnostic state and the right entry point."
+  },
+
+  "professionals": {
+    "tag": "02 · Professionals",
+    "hero_headline": "Capability that converts into externally recognised signal.",
+    "hero_lead": "Mid-career and senior professionals who have built real competence — but the market isn't seeing it clearly. The problem isn't performance. It's the architecture of how capability is positioned, communicated, and recognised externally.",
+    "risk_label": "The Structural Risk",
+    "risk_text": "Invisible capability. Strong internal competence that fails to translate into externally recognised signal — creating a persistent and compounding gap between delivery and reward, between what you can do and what the market believes you can do. The longer this gap exists, the more expensive it becomes.",
+    "risk_quote": "The risk is invisible capability — strong internal competence that fails to translate into externally recognised signal.",
+    "who_heading": "Who Professionals Are",
+    "who_subheading": "Most career stagnation is not a performance problem. It is a positioning architecture problem.",
+    "who_col1": "Professionals at the mid-to-senior level frequently carry capability the market systematically undervalues. The promotions don't come. The senior roles go to others. The opportunities that should be inbound remain outbound. None of this reflects the actual quality of the work — it reflects a structural gap between capability and how that capability is read externally.",
+    "who_col2": "AspireFyX diagnoses that gap precisely — then closes it through structured positioning work. The output is not a polished LinkedIn profile. It is a coherent positioning framework that converts demonstrated competence into market-recognised authority, and authority into the right career traction.",
+    "cta_label": "Ready to close the gap?",
+    "cta_headline": "Begin with a 45-minute Discovery Session.",
+    "cta_body": "No pitch. No obligation. A structured conversation to identify your diagnostic state and the right entry point."
+  },
+
+  "builders": {
+    "tag": "03 · Builders",
+    "hero_headline": "Positioning coherence before commercial amplification.",
+    "hero_lead": "Founder-led and authority-driven entrepreneurs building ventures where credibility, positioning coherence, and operational architecture determine commercial traction. Including investment-seeking startups.",
+    "risk_label": "The Structural Risk",
+    "risk_text": "Amplifying visibility before establishing positioning coherence and operational architecture. Building at speed before the foundation is structurally sound. The market sees activity — but without coherence, activity produces noise, not traction.",
+    "risk_quote": "The risk lies in amplifying visibility before establishing positioning coherence and operational architecture.",
+    "who_heading": "Who Builders Are",
+    "who_subheading": "Most ventures don't fail from lack of ambition or effort. They fail from structural incoherence amplified at speed.",
+    "who_col1": "Builders — founders, authority-driven entrepreneurs, investment-seeking ventures — operate at the intersection of identity, positioning, and commercial architecture. The challenge is rarely motivation or talent. It is that execution outpaces structure.",
+    "who_col2": "AspireFyX works with Builders to establish the structural foundation before scale is pursued. We diagnose the identity, positioning, and operational gaps — then install the architecture that makes growth coherent, fundable, and sustainable.",
+    "cta_label": "Ready to build on solid ground?",
+    "cta_headline": "Begin with a 45-minute Discovery Session.",
+    "cta_body": "No pitch. No obligation. A structured conversation to identify your diagnostic state and the right entry point."
+  },
+
+  "book": {
+    "eyebrow": "The First Step",
+    "headline": "Book a Discovery Session.",
+    "subline": "A complimentary 45-minute session that identifies structural misalignment, positioning gaps, leverage blind spots, and the appropriate entry layer for your situation.",
+    "point1": "No pitch. No urgency. No obligation.",
+    "point2": "Only diagnostic clarity and a specific next step.",
+    "point3": "Singapore · India · Online"
+  },
+
+  "about": {
+    "eyebrow": "The Firm",
+    "headline": "AspireFyX",
+    "founding_text": "Founded in Singapore and operating in underserved markets across India, AspireFyX is a Diagnostic Growth Architecture Firm. We exist because most career and business failures are not talent failures — they are architectural failures. Direction without diagnosis. Execution without positioning. Visibility without coherence.",
+    "founder_name": "Anshuman",
+    "founder_title": "Founder & Principal Diagnostician",
+    "founder_bio": "25 years in media planning and buying at major agencies across Asia. That career built a deep understanding of how positioning, signal, and market architecture determine outcomes — not effort alone. AspireFyX applies that architecture to individuals and founders.",
+    "philosophy_heading": "The Philosophy",
+    "philosophy_text": "Growth is not a volume problem. It is a structural alignment problem. The right direction, clearly positioned, with the right execution architecture — compounds. Everything else is expensive noise."
+  },
+
+  "footer": {
+    "tagline": "Diagnostic Growth Architecture. Structured from the inside out.",
+    "location": "Singapore | India",
+    "email": "hello@aspirefyx.com"
+  }
+}
