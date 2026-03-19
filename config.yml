@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: Aspirefyx/aspirefyx-repo
+  repo: Aspirefyx/aspirefyx
   branch: main
   base_url: https://api.netlify.com
 
