@@ -1,2 +1,8 @@
-/admin/* /admin/index.html 200
-/* /index.html 200
+# 1. Allow the admin folder to serve its own index.html
+/admin/* /admin/index.html  200
+
+# 2. Allow the functions/api folder to work
+/api/* /api/:splat        200
+
+# 3. Direct everything else to the main website
+/* /index.html        200
