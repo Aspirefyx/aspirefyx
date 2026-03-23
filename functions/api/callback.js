@@ -2,7 +2,7 @@ export async function onRequest(context) {
   const code = new URL(context.request.url).searchParams.get("code");
   
   // Replace the text below with your actual Client Secret from GitHub
-  const client_id = "Ov23liYaLNWQZRYXvED";
+  const client_id = "0v23liYaLNWQZRYXvED";
   const client_secret = context.env.GITHUB_CLIENT_SECRET; 
 
   const response = await fetch("https://github.com/login/oauth/access_token", {
