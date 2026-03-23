@@ -2,7 +2,8 @@ backend:
   name: github
   repo: Aspirefyx/aspirefyx
   branch: main
-  
+  base_url: https://aspirefyx.pages.dev
+  auth_endpoint: api/auth
 
 media_folder: images
 public_folder: /images
