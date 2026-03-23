@@ -1,9 +1,6 @@
 export async function onRequest(context) {
+  const { env } = context;
   const code = new URL(context.request.url).searchParams.get("code");
-  
-  // Replace the text below with your actual Client Secret from GitHub
-  const client_id = "0v23liYaLNWQZRYXvED";
-  const client_secret = context.env.GITHUB_CLIENT_SECRET; 
 
   const response = await fetch("https://github.com/login/oauth/access_token", {
     method: "POST",
@@ -12,15 +9,15 @@ export async function onRequest(context) {
       "accept": "application/json",
     },
     body: JSON.stringify({
-      client_id,
-      client_secret,
+      client_id: env.GITHUB_CLIENT_ID,
+      client_secret: env.GITHUB_CLIENT_SECRET,
       code,
     }),
   });
 
   const result = await response.json();
   
-  // This script sends the token back to your CMS window
+  // This sends the login token back to the main CMS window
   const html = `
     <!DOCTYPE html>
     <html>
