@@ -2,11 +2,15 @@ export async function onRequest(context) {
   const { env } = context;
   const code = new URL(context.request.url).searchParams.get("code");
 
-  const response = await fetch("https://github.com/login/oauth/access_token", {
+  if (!code) {
+    return new Response("Missing code", { status: 400 });
+  }
+
+  const tokenResponse = await fetch("https://github.com/login/oauth/access_token", {
     method: "POST",
     headers: {
-      "content-type": "application/json",
-      "accept": "application/json",
+      "Content-Type": "application/json",
+      "Accept": "application/json",
     },
     body: JSON.stringify({
       client_id: env.GITHUB_CLIENT_ID,
@@ -15,22 +19,31 @@ export async function onRequest(context) {
     }),
   });
 
-  const result = await response.json();
-  
-  // This sends the login token back to the main CMS window
-  const html = `
-    <!DOCTYPE html>
-    <html>
-    <body>
-      <script>
-        const res = ${JSON.stringify({
-          token: result.access_token,
-          provider: "github",
-        })};
-        window.opener.postMessage('authorization:github:success:' + JSON.stringify(res), 'https://aspirefyx.pages.dev');
-      </script>
-    </body>
-    </html>`;
+  const data = await tokenResponse.json();
+  const token = data.access_token;
 
-  return new Response(html, { headers: { "content-type": "text/html" } });
+  const html = `<!DOCTYPE html>
+<html>
+<body>
+<script>
+  (function() {
+    function receiveMessage(e) {
+      if (e.data === "authorizing:github") {
+        window.removeEventListener("message", receiveMessage, false);
+        window.opener.postMessage(
+          'authorization:github:success:' + JSON.stringify({ token: "${token}", provider: "github" }),
+          e.origin
+        );
+      }
+    }
+    window.addEventListener("message", receiveMessage, false);
+    window.opener.postMessage("authorizing:github", "*");
+  })();
+</script>
+</body>
+</html>`;
+
+  return new Response(html, {
+    headers: { "Content-Type": "text/html" },
+  });
 }
