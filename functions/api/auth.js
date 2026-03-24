@@ -7,7 +7,7 @@ export async function onRequest(context) {
     const url = new URL("https://github.com/login/oauth/authorize");
     url.searchParams.set("client_id", client_id);
     url.searchParams.set("scope", "repo,user");
-    url.searchParams.set("redirect_uri", "https://aspirefyx.pages.dev/api/callback");
+    url.searchParams.set("redirect_uri", "https://aspirefyx.pages.dev/functions/api/callback");
 
     return Response.redirect(url.href, 302);
 }
