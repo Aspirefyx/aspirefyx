@@ -27,7 +27,7 @@ export async function onRequest(context) {
           token: result.access_token,
           provider: "github",
         })};
-        window.opener.postMessage('authorization:github:success:' + JSON.stringify(res), "*");
+        window.opener.postMessage('authorization:github:success:' + JSON.stringify(res), 'https://aspirefyx.pages.dev');
       </script>
     </body>
     </html>`;
